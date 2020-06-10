@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <div class="content">
+        <img id ='reserv' data-state = 'livre' src="/assets/free.svg" alt="">
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyA-USx4ZtknNFCmyzLmMxLYzFzHapg2o8Y",
+            authDomain: "primeiro-contato.firebaseapp.com",
+            databaseURL: "https://primeiro-contato.firebaseio.com",
+            projectId: "primeiro-contato",
+            storageBucket: "primeiro-contato.appspot.com"
+        };
+        firebase.initializeApp(firebaseConfig);
+     </script>
+    <script src="/scripts/home.js"></script>
+</body>
+</html>
