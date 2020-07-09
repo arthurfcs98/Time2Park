@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto</title>
-    <link rel="stylesheet" href="/styles/home.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/home.css" />
+  </head>
+  <body>
     <div class="content">
-        <img id ='reserv' data-state = 'livre' src="/assets/free.svg" alt="">
+      <header>
+        <h1 class="logo">TimeToPark</h1>
+        <a href="/" class="booked">
+          <span></span>
+          Ver vagas
+        </a>
+      </header>
+
+      <main>
+        <h1 class="slogan">
+          Economize seu bem mais valioso: Tempo.<br />Reserve já sua vaga.
+        </h1>
+
+        <a href="/" class="book">
+          <span></span>
+          Reservar
+        </a>
+
+        <img src="/assets/parkzone.png" alt="parking zone" />
+      </main>
     </div>
-
-
 
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
     <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyA-USx4ZtknNFCmyzLmMxLYzFzHapg2o8Y",
-            authDomain: "primeiro-contato.firebaseapp.com",
-            databaseURL: "https://primeiro-contato.firebaseio.com",
-            projectId: "primeiro-contato",
-            storageBucket: "primeiro-contato.appspot.com"
-        };
-        firebase.initializeApp(firebaseConfig);
-     </script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyA-USx4ZtknNFCmyzLmMxLYzFzHapg2o8Y",
+        authDomain: "primeiro-contato.firebaseapp.com",
+        databaseURL: "https://primeiro-contato.firebaseio.com",
+        projectId: "primeiro-contato",
+        storageBucket: "primeiro-contato.appspot.com",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="/scripts/home.js"></script>
-</body>
+  </body>
 </html>
