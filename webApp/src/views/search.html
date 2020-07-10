@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/search.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1 class="logo">TimeToPark</h1>
+        <a href="/" class="booked">
+          <span></span>
+          voltar
+        </a>
+      </header>
+      <main>
+        <h1>Vagas</h1>
+        <div class="vagas">
+          <div class="informations">
+            <h3>VAGA 1</h3>
+            <span id="status">Status: Livre</span><br />
+            <span id="nome">Nome: Sem Informação</span>
+          </div>
+          <img src="/assets/free.svg" alt="carro verde livre" />
+        </div>
+        <button disabled="disabled">Cancelar</button>
+        <div class="vagas">
+          <div class="informations">
+            <h3>VAGA 1</h3>
+            <span id="status">Status: Livre</span><br />
+            <span id="nome">Nome: Sem Informação</span>
+          </div>
+          <img src="/assets/free.svg" alt="carro verde livre" />
+        </div>
+        <button disabled="disabled">Cancelar</button>
+        <div class="vagas">
+          <div class="informations">
+            <h3>VAGA 1</h3>
+            <span id="status">Status: Livre</span><br />
+            <span id="nome">Nome: Sem Informação</span>
+          </div>
+          <img src="/assets/free.svg" alt="carro verde livre" />
+        </div>
+        <button disabled="disabled">Cancelar</button>
+      </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyA-USx4ZtknNFCmyzLmMxLYzFzHapg2o8Y",
+        authDomain: "primeiro-contato.firebaseapp.com",
+        databaseURL: "https://primeiro-contato.firebaseio.com",
+        projectId: "primeiro-contato",
+        storageBucket: "primeiro-contato.appspot.com",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/scripts/home.js"></script>
+  </body>
+</html>

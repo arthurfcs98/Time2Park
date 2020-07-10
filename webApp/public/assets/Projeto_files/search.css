@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 90%;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: cursive;
+}
+.content header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 0px 75px;
+}
+.content header h1.logo {
+  font-size: 40px;
+  color: #f27b26;
+  font-family: "Indie Flower";
+}
+.content header a.booked {
+  font-size: 20px;
+  color: #f27b26;
+  display: flex;
+  font-weight: bold;
+}
+.content header a.booked:hover {
+  color: #f59958;
+}
+.content header a span {
+  background: url(/assets/arrow-left.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-right: 10px;
+}
+.content main {
+  margin-top: 30px;
+}
+
+.content main h1 {
+  color: #f27b26;
+  text-align: center;
+}
+.vagas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vagas img {
+  width: 100px;
+  height: 50px;
+}
+.vagas button {
+  display: flex;
+}

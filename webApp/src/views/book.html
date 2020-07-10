@@ -8,29 +8,52 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/book.css" />
   </head>
   <body>
     <div class="content">
       <header>
         <h1 class="logo">TimeToPark</h1>
-        <a href="/search" class="booked">
+        <a href="/" class="booked">
           <span></span>
-          Ver vagas
+          Voltar
         </a>
       </header>
 
       <main>
-        <h1 class="slogan">
-          Economize seu bem mais valioso: Tempo.<br />Reserve já sua vaga.
-        </h1>
+        <form action="/">
+          <h1>Reserva de Vaga</h1>
 
-        <a href="/book" class="book">
-          <span></span>
-          Reservar
-        </a>
+          <fieldset>
+            <legend>
+              <h2>Dados para reserva</h2>
+            </legend>
 
-        <img src="/assets/parkzone.png" alt="parking zone" />
+            <div class="field">
+              <label for="name">Nome</label>
+              <input type="text" id="name" required />
+            </div>
+
+            <div class="field">
+              <label for="time">Vaga</label>
+              <select name="time" required>
+                <option value="0">Selecione uma vaga</option>
+                <option value="1">Vaga 1</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="name">Senha</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Senha usada para cancelamento"
+                required
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Reservar Vaga</button>
+        </form>
       </main>
     </div>
 

@@ -14,6 +14,10 @@ server.get('/', (req, res) => {
 })
 
 //reserve
-
+server.get('/book', (req, res) => {
+    return res.sendFile(__dirname + "/views/book.html")
+})
 //search
-
+server.get('/search', (req, res) => {
+    return res.sendFile(__dirname + "/views/search.html")
+})
