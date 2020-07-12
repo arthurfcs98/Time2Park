@@ -29,26 +29,45 @@
           </div>
           <img src="/assets/free.svg" alt="carro verde livre" />
         </div>
-        <button disabled="disabled">Cancelar</button>
+        <button class="btn">Cancelar</button>
         <div class="vagas">
           <div class="informations">
-            <h3>VAGA 1</h3>
-            <span id="status">Status: Livre</span><br />
+            <h3>VAGA 2</h3>
+            <span id="status">Status: Ocupada</span><br />
             <span id="nome">Nome: Sem Informação</span>
           </div>
-          <img src="/assets/free.svg" alt="carro verde livre" />
+          <img src="/assets/occupied.svg" alt="carro verde livre" />
         </div>
-        <button disabled="disabled">Cancelar</button>
+        <button class="btn">Cancelar</button>
         <div class="vagas">
           <div class="informations">
-            <h3>VAGA 1</h3>
-            <span id="status">Status: Livre</span><br />
+            <h3>VAGA 3</h3>
+            <span id="status">Status: Ocupada</span><br />
             <span id="nome">Nome: Sem Informação</span>
           </div>
-          <img src="/assets/free.svg" alt="carro verde livre" />
+          <img src="/assets/occupied.svg" alt="carro verde livre" />
         </div>
-        <button disabled="disabled">Cancelar</button>
+        <button class="btn">Cancelar</button>
       </main>
+    </div>
+
+    <div id="modal" class="hide">
+      <div class="content">
+        <div class="header">
+          <h1>Cancelamento de reserva</h1>
+          <a href="#">Fechar</a>
+        </div>
+
+        <form action="/" class="" id="canceled">
+          <label for="search">Senha</label>
+          <div class="search field">
+            <input type="text" placeholder="Senha cancelamento" />
+            <button>
+              <img src="/assets/log-in.svg" alt="Buscar" />
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>

@@ -17,6 +17,10 @@ server.get('/', (req, res) => {
 server.get('/book', (req, res) => {
     return res.sendFile(__dirname + "/views/book.html")
 })
+//success
+server.get('/booksuccess', (req, res) => {
+    return res.sendFile(__dirname + "/views/booksuccess.html")
+})
 //search
 server.get('/search', (req, res) => {
     return res.sendFile(__dirname + "/views/search.html")

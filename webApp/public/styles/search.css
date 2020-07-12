@@ -59,5 +59,133 @@ body {
   width: 100px;
   height: 50px;
 }
+.informations {
+  margin: 30px 100px 20px 0;
+  color: #4f4f4f;
+}
 .vagas button {
+  display: none;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: #f27b26;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f59958;
+}
+/*MODAL TEST*/
+#modal {
+  background-color: #0e0a14ef;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms;
+}
+
+#modal.hide {
+  display: none;
+}
+
+#modal .content {
+  color: #f27b26;
+  width: 500px;
+}
+
+#modal .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+#modal .header a {
+  background-image: url(../assets/x.svg);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  font-size: 0.01px;
+}
+
+#modal .header h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+#modal form label {
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#modal form .field {
+  display: flex;
+}
+
+#modal form input {
+  flex: 1;
+  background-color: #f0f0f5;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+#modal form button {
+  width: 72px;
+  height: 72px;
+  background-color: #f0f0f5;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+#modal form button:hover {
+  background-color: #f59958;
+}
+@media (max-width: 500px) {
+  body {
+    width: auto;
+    height: auto;
+    background-image: none;
+    background-color: #dedede;
+    font-family: sans-serif;
+  }
+  .content header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0 5px 0;
+  }
+  .content header h1.logo {
+    font-size: 12vw;
+  }
+  .content header a.booked {
+    font-size: 6vw;
+  }
+
+  .content main {
+    margin-top: 10px;
+  }
+
+  #modal .content {
+    padding: 0 20px;
+    flex: 1;
+  }
+  #modal .header a {
+    margin-right: 5px;
+  }
 }

@@ -52,6 +52,7 @@ body {
   line-height: 4rem;
   color: #788896;
   text-align: center;
+  font-family: cursive;
 }
 
 .content main a.book {
@@ -85,4 +86,51 @@ body {
 
 .content main img {
   width: 85%;
+}
+
+@media (max-width: 500px) {
+  body {
+    width: auto;
+    height: auto;
+    background-image: none;
+    background-color: #dedede;
+    font-family: sans-serif;
+  }
+  .content header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .content header h1.logo {
+    font-size: 12vw;
+    margin-bottom: 15px;
+  }
+  .content header a.booked {
+    font-size: 6vw;
+  }
+  .content main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .content main h1.slogan {
+    font-size: 7vw;
+  }
+  .content main a.book {
+    width: 200px;
+    height: 50px;
+    font-size: 6vw;
+    text-align: center;
+  }
+  .content main a span {
+    margin: 0 10px 0 30px;
+  }
+  .content main img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
