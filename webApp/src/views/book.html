@@ -21,7 +21,7 @@
       </header>
 
       <main>
-        <form action="/">
+        <form action="/book/success">
           <h1>Reserva de Vaga</h1>
 
           <fieldset>
@@ -31,14 +31,14 @@
 
             <div class="field">
               <label for="name">Nome</label>
-              <input type="text" id="name" required />
+              <input type="text" id="name" name="name" value="" required />
             </div>
 
             <div class="field">
               <label for="time">Vaga</label>
               <select name="time" required>
-                <option value="0">Selecione uma vaga</option>
-                <option value="1">Vaga 1</option>
+                <option value="" disabled selected>Selecione uma vaga</option>
+                <option value="1" id="vaga1">Vaga 1</option>
               </select>
             </div>
 
@@ -47,12 +47,16 @@
               <input
                 type="password"
                 id="password"
+                name="senha"
+                value=""
                 placeholder="Senha de cancelamento"
                 required
               />
             </div>
           </fieldset>
-          <button type="submit" id="btn">Reservar Vaga</button>
+          <button type="submit" id="btn" name="cadastro" value="value">
+            Reservar Vaga
+          </button>
         </form>
       </main>
     </div>
@@ -69,6 +73,6 @@
       };
       firebase.initializeApp(firebaseConfig);
     </script>
-    <script src="/scripts/home.js"></script>
+    <script src="/scripts/book.js"></script>
   </body>
 </html>

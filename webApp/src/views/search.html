@@ -24,12 +24,12 @@
         <div class="vagas">
           <div class="informations">
             <h3>VAGA 1</h3>
-            <span id="status">Status: Livre</span><br />
-            <span id="nome">Nome: Sem Informação</span>
+            <span id="status1">Status: </span><br />
+            <span id="nome1">Nome: Sem Informação</span>
           </div>
-          <img src="/assets/free.svg" alt="carro verde livre" />
+          <img src="/assets/occupied.svg" alt="carro" id="img1" />
         </div>
-        <button class="btn">Cancelar</button>
+        <button class="btn" id="vaga1" onclick="cancelar()">Cancelar</button>
         <div class="vagas">
           <div class="informations">
             <h3>VAGA 2</h3>
@@ -38,7 +38,7 @@
           </div>
           <img src="/assets/occupied.svg" alt="carro verde livre" />
         </div>
-        <button class="btn">Cancelar</button>
+        <button class="btn" disabled>Cancelar</button>
         <div class="vagas">
           <div class="informations">
             <h3>VAGA 3</h3>
@@ -47,7 +47,7 @@
           </div>
           <img src="/assets/occupied.svg" alt="carro verde livre" />
         </div>
-        <button class="btn">Cancelar</button>
+        <button class="btn" disabled>Cancelar</button>
       </main>
     </div>
 
@@ -55,14 +55,19 @@
       <div class="content">
         <div class="header">
           <h1>Cancelamento de reserva</h1>
-          <a href="#">Fechar</a>
+          <a href="#" onclick="fechar()">Fechar</a>
         </div>
 
         <form action="/" class="" id="canceled">
           <label for="search">Senha</label>
           <div class="search field">
-            <input type="text" placeholder="Senha cancelamento" />
-            <button>
+            <input
+              type="text"
+              placeholder="Senha de cancelamento"
+              id="senha"
+              required
+            />
+            <button type="submit">
               <img src="/assets/log-in.svg" alt="Buscar" />
             </button>
           </div>
@@ -82,6 +87,6 @@
       };
       firebase.initializeApp(firebaseConfig);
     </script>
-    <script src="/scripts/home.js"></script>
+    <script src="/scripts/search.js"></script>
   </body>
 </html>

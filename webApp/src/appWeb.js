@@ -18,7 +18,7 @@ server.get('/book', (req, res) => {
     return res.sendFile(__dirname + "/views/book.html")
 })
 //success
-server.get('/booksuccess', (req, res) => {
+server.get('/book/success', (req, res) => {
     return res.sendFile(__dirname + "/views/booksuccess.html")
 })
 //search

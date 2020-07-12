@@ -93,7 +93,8 @@ body {
   transition: 400ms;
 }
 
-#modal.hide {
+#modal.hide,
+#canceled.hide {
   display: none;
 }
 
